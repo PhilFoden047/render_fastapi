@@ -37,10 +37,16 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <title>My First Web Page</title>
         </head>
-        <body>
-            <h1>Look ma! HTML!</h1>
+        <body style="background-color:#f0f8ff;">
+            <h1>こんにちは！これは私のホームページです 🌟</h1>
+            <p>FastAPI から HTML を返しています。</p>
+            <ul>
+                <li>自己紹介</li>
+                <li>趣味</li>
+                <li>連絡先</li>
+            </ul>
         </body>
     </html>
     """
