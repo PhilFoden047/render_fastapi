@@ -45,3 +45,8 @@ def index():
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+@app.post("/present")
+async def give_present(present: str):
+    message = f"🎁 わあ！『{present}』をありがとう！あなたに特製クッキーをプレゼントします 🍪"
+    return JSONResponse(content={"response": message})
