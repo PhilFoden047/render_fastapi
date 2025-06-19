@@ -2,6 +2,9 @@ from typing import Optional
 
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from fastapi.responses import JSONResponse
+
+
 
 
 import random  # randomライブラリを追加
@@ -42,12 +45,12 @@ def index():
             <title>My First Web Page</title>
         </head>
         <body style="background-color:#f0f8ff;">
-            <h1>こんにちは！これは私のホームページです 🌟</h1>
-            <p>FastAPI から HTML を返しています。</p>
+            <h1>結城大地のホームページ</h1>
+            <p>💛💛</p>
             <ul>
-                <li>自己紹介</li>
-                <li>趣味</li>
-                <li>連絡先</li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         </body>
     </html>
@@ -56,5 +59,5 @@ def index():
 
 @app.post("/present")
 async def give_present(present: str):
-    message = f"🎁 わあ！『{present}』をありがとう！あなたに特製クッキーをプレゼントします 🍪"
+    message = f"giftをもらいました『{present}』をありがとう！あなたに幸運が訪れます"
     return JSONResponse(content={"response": message})
