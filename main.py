@@ -1,6 +1,8 @@
 from typing import Optional
 
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+
 
 import random  # randomライブラリを追加
 
